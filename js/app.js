@@ -53,7 +53,7 @@ Enemy.prototype.increaseEnemy = function(num) {
 };
 
 Enemy.prototype.collision = function() {
-  if (player.y + 129 >= enemy.y + 85 && player.x + 20 <= this.x + 83 && this.y + 70 <= this.y + 140 && this.x + 72 >= this.x + 15) {
+  if (player.y + 129 >= this.y + 85 && player.x + 20 <= this.x + 83 && this.y + 70 <= this.y + 140 && this.x + 72 >= this.x + 15) {
 
     player.x = 200;
     player.y = 300;
